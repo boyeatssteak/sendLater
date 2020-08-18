@@ -1,0 +1,25 @@
+{
+  "name": "scheduledsend",
+  "version": "1.0.0",
+  "description": "Generate a date to use to schedule an item for sending",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "pack": "webpack"
+  },
+  "author": "boyEatsSteak",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "date-fns": "^2.11.0",
+    "webpack": "^4.44.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

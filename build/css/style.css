@@ -1,0 +1,30 @@
+body {
+    background: #ddd;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    max-width: 300px;
+    margin: 2rem auto;
+}
+.heading {
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+.item {
+    margin-top: 20px;
+}
+.item *::selection {
+    background: yellow;
+    color: black;
+}
+.copypasta {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    background: #bbb;
+    color: #111;
+}

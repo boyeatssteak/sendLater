@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Send it Later</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Send it Later</h1>
+        </div>
+
+        <div class="item">
+            <div class="label">Delayed send date</div>
+            <div id="date" class="copypasta"></div>
+        </div>
+        <div class="item">
+            <div class="label">Delayed send time</div>
+            <div id="time" class="copypasta"></div>
+        </div>
+        <div class="item">
+            <div class="label">Explanation Template</div>
+            <div class="copypasta">This message was authored/outboxed at <span id="now"></span>, but the sender wanted to send it later for some reason, which is why you're receiving it now.</div>
+        </div>
+    </div>
+
+    <script src="main.bundle.js"></script>
+</body>
+</html>
