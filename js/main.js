@@ -64,6 +64,7 @@ console.log({
     'xDate': format(selectedDateTime, 'PPpp')
 })
 
+document.getElementById('today').innerHTML = format(now, 'Pp')
 document.getElementById('date').innerHTML = format(selectedDateTime, 'P')
 document.getElementById('time').innerHTML = format(selectedDateTime, 'p')
 document.getElementById('now').innerHTML = format(now, 'PPpp')

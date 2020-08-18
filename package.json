@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
-    "pack": "webpack"
+    "pack": "webpack",
+    "pack-prod": "webpack --mode=production"
   },
   "author": "boyEatsSteak",
   "license": "ISC",
