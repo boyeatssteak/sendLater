@@ -58,13 +58,20 @@ const rangeInSeconds = format(ranges[selectedRange].max, 't') - format(ranges[se
 const selectedTimeInRange = Math.random() * rangeInSeconds
 const selectedDateTime = addSeconds(ranges[selectedRange].min, selectedTimeInRange)
 
-console.log({
-    'aRangeName': selectedRange,
-    'rangeDates': ranges[selectedRange],
-    'xDate': format(selectedDateTime, 'PPpp')
-})
+// console.log({
+//     'aRangeName': selectedRange,
+//     'rangeDates': ranges[selectedRange],
+//     'xDate': format(selectedDateTime, 'PPpp')
+// })
 
 document.getElementById('today').innerHTML = format(now, 'Pp')
 document.getElementById('date').innerHTML = format(selectedDateTime, 'P')
 document.getElementById('time').innerHTML = format(selectedDateTime, 'p')
 document.getElementById('now').innerHTML = format(now, 'PPpp')
+
+const subject = document.getElementById('subject').textContent
+const body = document.getElementById('explanation').textContent
+const credits = 'For more info, visit https://letterx.co/apex/send-later/'
+const deliverString = 'To be delivered ' + format(selectedDateTime, 'PPpp')
+const mailto = 'mailto:?subject=' + subject + '&body=' + body + '%0A' + credits + '%0A' + deliverString
+document.getElementById('emailLink').href = mailto
